@@ -1,0 +1,25 @@
+<apex:page standardController="contact" showHeader="false">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page. This is a test page which consists only of one image
+  <br></br>
+  <br></br>
+  Your name is: {!$User.FirstName}
+  <apex:image id="theImage" value="https://miro.medium.com/max/978/0*0mia7BQKjUAuXeqZ.jpeg" width="553" height="280" alt="Neural Network"/>
+  
+  <apex:form >
+  <apex:pageBlock title="Enter contact details:">
+      <apex:pageBlockSection title="Enter details:" columns="1">
+      
+          <apex:inputField value="{!contact.lastname}"/>
+          <apex:inputField value="{!contact.email}"/>
+          <apex:inputField value="{!contact.phone}"/>
+      </apex:pageBlockSection>
+      
+      <apex:commandButton value="Submit" action="{!Save}"/>
+      <apex:commandButton value="Cancel" action="{!Cancel}"/>
+  </apex:pageBlock>
+  </apex:form>
+  
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

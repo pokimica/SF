@@ -1,0 +1,351 @@
+!SESSION 2018-10-11 10:12:18.308 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY mega.js.tern 1 0 2018-10-11 10:12:36.727
+!MESSAGE Started Node.js v5.9.1 (V8 v4.6.85.31) in 246.8 ms
+
+!ENTRY mega.js.tern 1 0 2018-10-11 10:12:36.828
+!MESSAGE Loading tern.js...
+
+
+!ENTRY mega.js.tern 1 0 2018-10-11 10:12:36.828
+!MESSAGE Loading library ecma5
+
+
+!ENTRY mega.js.tern 1 0 2018-10-11 10:12:36.838
+!MESSAGE Loading library browser
+
+
+!ENTRY mega.js.tern 1 0 2018-10-11 10:12:36.848
+!MESSAGE Loading library ecma6
+
+
+!ENTRY mega.js.tern 1 0 2018-10-11 10:12:36.848
+!MESSAGE Loading plugin doc_comment
+
+
+!ENTRY mega.js.tern 1 0 2018-10-11 10:12:36.866
+!MESSAGE Loading plugin aura
+
+
+!ENTRY mega.js.tern 1 0 2018-10-11 10:12:37.281
+!MESSAGE Tern.js (0.19.0) ready
+
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-10-11 10:12:40.218
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\sasap.CT'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY mega.js.tern 1 0 2018-10-11 10:12:50.308
+!MESSAGE ':core' project is not available. Please add '<module>:core</module>' to your list of partial build modules. If using para, set 'ide-search-all-files: true' and run 'para refresh'
+
+!ENTRY mega.js.tern 1 0 2018-10-11 10:12:50.319
+!MESSAGE Analyzed Lightning System JavaScript Support in 10.49 ms
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:05.305
+!MESSAGE  WARN [2018-10-11 10:46:05,301] (Utils.java:loadDocument:807) - Unable to load document: D:\Projects\SalesForce\SF\SF\.metadata\.plugins\com.salesforce.ide.core\packageCache.xml (The system cannot find the file specified)
+
+
+!ENTRY org.eclipse.jface 2 0 2018-10-11 10:46:15.115
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:761)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:528)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1503)
+	at org.eclipse.ui.dialogs.FilteredTree$2.runInUIThread(FilteredTree.java:523)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:396)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:424)
+	at org.eclipse.jface.dialogs.MessageDialog.openWarning(MessageDialog.java:532)
+	at com.salesforce.ide.core.internal.utils.Utils.openWarn(Utils.java:362)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestController.logAndDisplayWarnMsgIfNeeded(PackageManifestController.java:743)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestController.createModel(PackageManifestController.java:864)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestController.updateManifest(PackageManifestController.java:174)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestController.getEnabledCompTypeTreeNodes(PackageManifestController.java:439)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestTree$ManifestContentProvider.getElements(PackageManifestTree.java:690)
+	at org.eclipse.jface.viewers.StructuredViewer.getRawChildren(StructuredViewer.java:1001)
+	at org.eclipse.jface.viewers.ColumnViewer.getRawChildren(ColumnViewer.java:701)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getRawChildren(AbstractTreeViewer.java:1349)
+	at org.eclipse.jface.viewers.TreeViewer.getRawChildren(TreeViewer.java:341)
+	at org.eclipse.jface.viewers.StructuredViewer.getFilteredChildren(StructuredViewer.java:907)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:621)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.lambda$0(AbstractTreeViewer.java:817)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:795)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:596)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:766)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalInitializeTree(AbstractTreeViewer.java:1538)
+	at org.eclipse.jface.viewers.TreeViewer.internalInitializeTree(TreeViewer.java:772)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.lambda$1(AbstractTreeViewer.java:1523)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1458)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:354)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1419)
+	at org.eclipse.jface.viewers.CheckboxTreeViewer.preservingSelection(CheckboxTreeViewer.java:409)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestTree$PackageManifestTreeViewer.preservingSelection(PackageManifestTree.java:417)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1517)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:286)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1696)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestTree.updateTree(PackageManifestTree.java:1693)
+	at com.salesforce.ide.ui.wizards.project.ProjectCustomComponentsComposite.initialize(ProjectCustomComponentsComposite.java:116)
+	at com.salesforce.ide.ui.wizards.project.ProjectCustomComponentsComposite.<init>(ProjectCustomComponentsComposite.java:72)
+	at com.salesforce.ide.ui.wizards.project.ProjectCustomComponentsDialog.createDialogArea(ProjectCustomComponentsDialog.java:59)
+	at org.eclipse.jface.dialogs.Dialog.createContents(Dialog.java:767)
+	at org.eclipse.jface.window.Window.create(Window.java:426)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1095)
+	at com.salesforce.ide.ui.wizards.project.ProjectCustomComponentsDialog.create(ProjectCustomComponentsDialog.java:156)
+	at org.eclipse.jface.window.Window.open(Window.java:783)
+	at com.salesforce.ide.ui.wizards.project.ProjectProjectContentComposite$8.widgetDefaultSelected(ProjectProjectContentComposite.java:294)
+	at com.salesforce.ide.ui.wizards.project.ProjectProjectContentComposite$8.widgetSelected(ProjectProjectContentComposite.java:309)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:115)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:25.397
+!MESSAGE  WARN [2018-10-11 10:46:25,396] (ComponentResource.java:loadFromFile:430) - File 'src/package.xml' does not exist
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.074
+!MESSAGE  WARN [2018-10-11 10:46:48,073] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Coveo for Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: CoveoOAuthSettings__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.083
+!MESSAGE  WARN [2018-10-11 10:46:48,074] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Coveo for Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: SegmentWriteKeys__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.084
+!MESSAGE  WARN [2018-10-11 10:46:48,084] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Coveo for Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: FeatureFlagSetting__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.087
+!MESSAGE  WARN [2018-10-11 10:46:48,084] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Coveo for Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Settings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.088
+!MESSAGE  WARN [2018-10-11 10:46:48,087] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Coveo for Salesforce/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Coveo_for_Salesforce.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.088
+!MESSAGE  WARN [2018-10-11 10:46:48,088] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Coveo for Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: SegmentWriteKeys__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.088
+!MESSAGE  WARN [2018-10-11 10:46:48,088] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Coveo for Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: FeatureFlagSetting__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.089
+!MESSAGE  WARN [2018-10-11 10:46:48,088] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Coveo for Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: Settings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.089
+!MESSAGE  WARN [2018-10-11 10:46:48,089] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Coveo for Salesforce/package.xml': Can't retrieve non-customizable CustomObject named: CoveoOAuthSettings__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.090
+!MESSAGE  WARN [2018-10-11 10:46:48,089] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'S4G Automatic Currency Updater/package.xml': Can't retrieve non-customizable CustomObject named: S4G_settings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.091
+!MESSAGE  WARN [2018-10-11 10:46:48,091] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'S4G Automatic Currency Updater/package.xml': Can't retrieve non-customizable CustomObject named: Setting__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.092
+!MESSAGE  WARN [2018-10-11 10:46:48,091] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'S4G Automatic Currency Updater/package.xml': Can't retrieve non-customizable CustomObject named: CurrencyUpdaterSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.094
+!MESSAGE  WARN [2018-10-11 10:46:48,092] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'S4G Automatic Currency Updater/package.xml': Can't retrieve non-customizable CustomObject named: CurrencyUpdaterSettings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.094
+!MESSAGE  WARN [2018-10-11 10:46:48,094] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'S4G Automatic Currency Updater/package.xml': Can't retrieve non-customizable CustomObject named: S4G_settings__c
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.095
+!MESSAGE  WARN [2018-10-11 10:46:48,095] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'S4G Automatic Currency Updater/package.xml': Can't retrieve non-customizable CustomObject named: Setting__mdt
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.095
+!MESSAGE  WARN [2018-10-11 10:46:48,095] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Dataloader_Partner.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.095
+!MESSAGE  WARN [2018-10-11 10:46:48,095] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Forcecom_IDE.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.097
+!MESSAGE  WARN [2018-10-11 10:46:48,097] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Dataloader_Bulk.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.097
+!MESSAGE  WARN [2018-10-11 10:46:48,097] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_Touch.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.097
+!MESSAGE  WARN [2018-10-11 10:46:48,097] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_for_Outlook.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.098
+!MESSAGE  WARN [2018-10-11 10:46:48,098] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Workbench.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.099
+!MESSAGE  WARN [2018-10-11 10:46:48,098] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Forcecom_Migration_Tool.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.099
+!MESSAGE  WARN [2018-10-11 10:46:48,099] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce Connected Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_Mobile_Dashboards.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.100
+!MESSAGE  WARN [2018-10-11 10:46:48,099] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce and Chatter Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce_Chatterbox.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.100
+!MESSAGE  WARN [2018-10-11 10:46:48,100] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce and Chatter Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Chatter_for_BlackBerry.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.101
+!MESSAGE  WARN [2018-10-11 10:46:48,101] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce and Chatter Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Chatter_for_iOS.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.101
+!MESSAGE  WARN [2018-10-11 10:46:48,101] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce and Chatter Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Salesforce1_for_Windows.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.102
+!MESSAGE  WARN [2018-10-11 10:46:48,102] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce and Chatter Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:SalesforceA.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.102
+!MESSAGE  WARN [2018-10-11 10:46:48,102] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce and Chatter Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Chatter_Desktop.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:46:48.103
+!MESSAGE  WARN [2018-10-11 10:46:48,103] (ProjectController.java:handleRetrieveResults:694) - Failed to retrieve: 'Salesforce and Chatter Apps/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Chatter_for_Android.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:48:54.858
+!MESSAGE  WARN [2018-10-11 10:48:54,857] (DefaultBuilder.java:applyDirtyMarkers:93) - TODO: apply 'Save locally only...' markers on each resource
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:07.730
+!MESSAGE  WARN [2018-10-11 10:49:07,730] (BuilderPayload.java:filterComponentsInConflict:256) - Remote retrieve result count [7] does not equal request count [1].
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:07.733
+!MESSAGE  WARN [2018-10-11 10:49:07,733] (ProjectPackageList.java:getComponentByFilePath:662) - Did not find component for 'aura/MyContactList'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:07.734
+!MESSAGE  WARN [2018-10-11 10:49:07,734] (BuilderPayload.java:conflictCheck:296) - AuraDefinitionBundle 'aura/MyContactList' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:10.270
+!MESSAGE  WARN [2018-10-11 10:49:10,269] (ProjectPackageList.java:getAllComponentResources:938) - File resource not found for component AuraDefinitionBundle 'aura/MyContactList' [unpackaged]
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:10.270
+!MESSAGE  WARN [2018-10-11 10:49:10,270] (MarkerUtils.java:clearDirty:446) - Unable to clear dirty markers on resources - resources is null or empty
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:10.271
+!MESSAGE  WARN [2018-10-11 10:49:10,271] (ProjectPackageList.java:getAllComponentResources:938) - File resource not found for component AuraDefinitionBundle 'aura/MyContactList' [unpackaged]
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:10.272
+!MESSAGE  WARN [2018-10-11 10:49:10,271] (MarkerUtils.java:clearSaveMarkers:564) - Unable to clear save markers on resources - resources is null or empty 
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:10.276
+!MESSAGE  WARN [2018-10-11 10:49:10,275] (ProjectPackageList.java:getComponentByMetadataFilePath:737) - Did not find component for 'aura/MyContactList'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:10.277
+!MESSAGE  WARN [2018-10-11 10:49:10,276] (ProjectService.java:handleRetrieveMessages:2220) - Unable to handle retrieve message - could not find component 'aura/MyContactList' for message 'In field: specific ids - no AuraDefinitionBundle named MyContactList. found'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:24.272
+!MESSAGE  WARN [2018-10-11 10:49:24,271] (BuilderPayload.java:filterComponentsInConflict:256) - Remote retrieve result count [7] does not equal request count [1].
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:24.277
+!MESSAGE  WARN [2018-10-11 10:49:24,276] (ProjectPackageList.java:getComponentByFilePath:662) - Did not find component for 'aura/MyContactList'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:24.278
+!MESSAGE  WARN [2018-10-11 10:49:24,277] (BuilderPayload.java:conflictCheck:296) - AuraDefinitionBundle 'aura/MyContactList' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:26.784
+!MESSAGE  WARN [2018-10-11 10:49:26,784] (ProjectPackageList.java:getAllComponentResources:938) - File resource not found for component AuraDefinitionBundle 'aura/MyContactList' [unpackaged]
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:26.785
+!MESSAGE  WARN [2018-10-11 10:49:26,785] (MarkerUtils.java:clearDirty:446) - Unable to clear dirty markers on resources - resources is null or empty
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:26.786
+!MESSAGE  WARN [2018-10-11 10:49:26,785] (ProjectPackageList.java:getAllComponentResources:938) - File resource not found for component AuraDefinitionBundle 'aura/MyContactList' [unpackaged]
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:26.786
+!MESSAGE  WARN [2018-10-11 10:49:26,786] (MarkerUtils.java:clearSaveMarkers:564) - Unable to clear save markers on resources - resources is null or empty 
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:26.787
+!MESSAGE  WARN [2018-10-11 10:49:26,787] (ProjectPackageList.java:getComponentByMetadataFilePath:737) - Did not find component for 'aura/MyContactList'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-10-11 10:49:26.788
+!MESSAGE  WARN [2018-10-11 10:49:26,787] (ProjectService.java:handleRetrieveMessages:2220) - Unable to handle retrieve message - could not find component 'aura/MyContactList' for message 'In field: specific ids - no AuraDefinitionBundle named MyContactList. found'
+

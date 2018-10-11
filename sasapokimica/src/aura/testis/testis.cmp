@@ -1,0 +1,6 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" >
+    XXXXXXXXXX 123 456
+    
+    <lightning:button label="Framework Button" onclick="{!c.handleClick}"/>
+	
+</aura:component>

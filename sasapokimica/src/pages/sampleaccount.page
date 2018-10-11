@@ -1,0 +1,6 @@
+<apex:page standardController="Account" sidebar="false" showHeader="false">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Sample</h1>
+  We are going to add this to the page layout for accounts
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
