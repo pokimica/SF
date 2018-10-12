@@ -1,6 +1,6 @@
 ({
 	getAccounts : function(cmp) {
-		var action = cmp.get("c.getContacts");
+		var action = cmp.get("c.GetAccounts");
 		action.setCallback(this, function(response){
 			var state = response.getState();
 			var toastEvent = $A.get("e.force:showToast");
