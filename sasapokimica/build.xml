@@ -13,7 +13,7 @@
 
     <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
         <classpath>
-            <pathelement location="../ant-salesforce.jar" />
+            <pathelement location="../ant-salesforce.jar"/>
         </classpath>
     </taskdef>
 
@@ -56,10 +56,10 @@
     </target>
 
     <!-- Shows deploying code & running tests for code in directory -->
-    <target name="deployCode">
+    <target name="deploySrc">
       <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
-      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="codepkg" testLevel="RunSpecifiedTests" rollbackOnError="true">
-      	 <runTest>SampleDeployClass</runTest>
+      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src"  rollbackOnError="true">    <!--testLevel="RunSpecifiedTests"-->
+        <!--<runTest>SampleDeployClass</runTest>-->
       </sf:deploy>
     </target>
 
@@ -115,3 +115,4 @@
       <sf:describeMetadata username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}"/>
     </target>
 </project>
+
