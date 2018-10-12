@@ -4,9 +4,16 @@
 	implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
 	
 	<aura:handler name="init" action="{!c.getAccounts}" value="{!this}" />
-	
+	<aura:attribute name="title" type="String" description="List Title" />
 	<aura:attribute name="accounts" type="Account[]" description="List of Accounts" />
-
+	<div>
+		<br/>
+		<div class="title">
+			{!v.title}
+		</div>
+		<br/>
+		<br/>
+	</div>
 	<ul>
         <aura:iteration items="{!v.accounts}" var="account">
             <li class="minli"> <h3>{!account.Name}</h3> </li>
