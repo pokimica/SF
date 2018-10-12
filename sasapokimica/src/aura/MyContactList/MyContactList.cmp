@@ -7,10 +7,5 @@
             <li class="minli"> <h3>{!contact.Name}</h3> </li>
         </aura:iteration>
 	</ul>
-	<ul>
-        <aura:iteration items="{!v.contacts}" var="contact">
-            <li class="minli"> <h3>{!contact.Name}</h3> </li>
-        </aura:iteration>
-	</ul>
 
 </aura:component>
