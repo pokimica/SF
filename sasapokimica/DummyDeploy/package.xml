@@ -5,11 +5,8 @@
         <members>Dummy__c</members>
         <name>CustomObject</name>
     </types>
-    <types>
-        <members>Dummy__c.Dummy_Number__c</members>
-        <name>CustomField</name>
-    </types>
     <version>44.0</version>
 </Package>
+
 
 
