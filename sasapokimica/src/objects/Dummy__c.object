@@ -51,17 +51,6 @@
     <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <fields>
-        <fullName>Dummy_Number__c</fullName>
-        <externalId>false</externalId>
-        <label>Dummy Number</label>
-        <precision>4</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
     <label>Dummy</label>
     <nameField>
         <label>Dummy Name</label>
