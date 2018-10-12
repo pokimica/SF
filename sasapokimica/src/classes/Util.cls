@@ -14,7 +14,7 @@ public class Util {
 	public static List<SObject> DynamicQuery(String ObjectType) {
 		Map<String, Schema.SObjectField> mapA = schemaMap.get(ObjectType).getDescribe().fields.getMap();
 		string fields = FormatFieldsForQuery(mapA,'');
-		string q = 'SELECT '+ fields +' FROM ' + ObjectType;
+		string q = 'SELECT '+ fields +' FROM ' + ObjectType + ' ORDER BY Name';
 		List<SObject> objects = Database.Query(q);
 		return objects;
 	}
