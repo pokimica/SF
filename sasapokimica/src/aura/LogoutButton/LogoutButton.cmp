@@ -1,0 +1,4 @@
+<aura:component access="global" 
+	implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">>
+	<ui:button aura:id="logout" label="Logout" press="{!c.Logout}"/>
+</aura:component>
