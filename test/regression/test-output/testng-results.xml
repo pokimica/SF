@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15337" started-at="2018-10-19T07:31:32Z" finished-at="2018-10-19T07:31:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15337" started-at="2018-10-19T07:31:32Z" finished-at="2018-10-19T07:31:47Z">
+      <class name="selenium.FirstLoginTest">
+        <test-method status="PASS" signature="startSFCommunity()[pri:1, instance:selenium.FirstLoginTest@4d50efb8]" name="startSFCommunity" duration-ms="3934" started-at="2018-10-19T07:31:32Z" description="This test will verify login page to SF Community" finished-at="2018-10-19T07:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSFCommunity -->
+        <test-method status="PASS" signature="loginToSFComunity()[pri:2, instance:selenium.FirstLoginTest@4d50efb8]" name="loginToSFComunity" duration-ms="5713" started-at="2018-10-19T07:31:36Z" description="This test will verify login passes" depends-on-methods="selenium.FirstLoginTest.startSFCommunity" finished-at="2018-10-19T07:31:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToSFComunity -->
+        <test-method status="PASS" signature="verifyCommunityFirstPageContent()[pri:3, instance:selenium.FirstLoginTest@4d50efb8]" name="verifyCommunityFirstPageContent" duration-ms="37" started-at="2018-10-19T07:31:42Z" description="Check if Title is correct" depends-on-methods="selenium.FirstLoginTest.loginToSFComunity" finished-at="2018-10-19T07:31:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCommunityFirstPageContent -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:selenium.FirstLoginTest@4d50efb8]" name="closeDriver" is-config="true" duration-ms="5649" started-at="2018-10-19T07:31:42Z" finished-at="2018-10-19T07:31:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="logoutFromSFCommunity()[pri:4, instance:selenium.FirstLoginTest@4d50efb8]" name="logoutFromSFCommunity" duration-ms="0" started-at="2018-10-19T07:31:42Z" description="This test will verify logout from SF" depends-on-methods="selenium.FirstLoginTest.verifyCommunityFirstPageContent" finished-at="2018-10-19T07:31:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromSFCommunity -->
+      </class> <!-- selenium.FirstLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
