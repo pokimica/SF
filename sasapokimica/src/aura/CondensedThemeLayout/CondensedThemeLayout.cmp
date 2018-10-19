@@ -1,0 +1,27 @@
+<aura:component implements="forceCommunity:themeLayout">
+	<aura:attribute name="search" type="Aura.Component[]" description="Main Search" />
+	<aura:attribute name="sidebarFooter" type="Aura.Component[]" description="sidebarFooter" />
+	
+	<div class="slds-grid slds-grid--align-center">
+		<div class="slds-col">
+			<div class="slds-grid slds-grid--vertical">
+				<div class="slds-col">
+					<!-- placeholder for logo -->
+				</div>
+				<div class="slds-col">
+					{!v.search}
+				</div>
+				<div class="slds-col">
+					<!-- Placeholder for navigation -->
+				</div>
+				<div class="slds-col">
+					{!v.sidebarFooter}
+				</div>
+			</div>
+		</div>
+		<div class="clds-col content">
+			{!v.body}
+		</div>
+	</div>
+	
+</aura:component>
