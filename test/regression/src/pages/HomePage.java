@@ -10,6 +10,7 @@ public class HomePage extends BaseTest {
 	private final String XPATH_LOGIN_USERNAME = ".//*[@placeholder='Email']";
 	private final String XPATH_LOGIN_PASSWORD = ".//*[@placeholder='Password']";
 	private final String XPATH_LOGIN_LOGIN_BUTTON = ".//*[@type='button']";
+	private final String XPATH_LOGOUT_BUTTON = ".//*[@type='button']";
 
 	public Boolean drawRectangles = true;
 	
@@ -45,8 +46,11 @@ public class HomePage extends BaseTest {
 	}
 	
 	@Test(priority=4, description="This test will verify logout from SF")//, dependsOnMethods="verifyCommunityFirstPageContent")
-	public void logoutFromSFCommunity(){
+	public void logoutFromSFCommunity() throws InterruptedException{
 		
-		System.out.println("checkOut");
+		click(By.xpath(XPATH_LOGOUT_BUTTON), drawRectangles);
+		Thread.sleep(5000);
+		String currentUrl = currentURL();
+		Assert.assertTrue(currentUrl.equals("https://sasapokimica-dev-ed.my.salesforce.com/"));
 	}
 }
