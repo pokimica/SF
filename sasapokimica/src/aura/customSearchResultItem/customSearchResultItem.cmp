@@ -4,6 +4,8 @@
 	<aura:attribute name="simpleRecord" type="Object" description="Don't know yet" />
 	<aura:attribute name="recordError" type="String" description="" />
 	
+	
+	
 	<force:recordData aura:id="recordLoader"
       	recordId="{!v.recordId}"
       	layoutType="COMPACT"
