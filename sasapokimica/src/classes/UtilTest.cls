@@ -1,4 +1,4 @@
-@isTest
+@isTest(SeeAllData=true)
 private class UtilTest {
 
     public static testMethod void FormatFieldsForQueryTest() {
@@ -16,19 +16,19 @@ private class UtilTest {
     }
     
     public static testMethod void DynamicQueryTest(){
-    	List<TestObj__c> objs = Util.DynamicQuery('TestObj__c');
-    	
-    	System.assert(objs != null && objs.size() == 10, true);
-    	
-    	String expected = '0,1,2,3,4,5,6,7,8,9';
-    	
-    	String result = '';
-    	for(TestObj__c t: objs){
-    		result += t.Name + ',';
-    	}
-    	
-    	result = result.substring(0,result.length()-1);
-    	
-    	System.assertEquals(result, expected);    	
+        List<TestObj__c> objs = Util.DynamicQuery('TestObj__c');
+        
+        System.assert(objs != null && objs.size() == 10, true);
+        
+        String expected = '0,1,2,3,4,5,6,7,8,9';
+        
+        String result = '';
+        for(TestObj__c t: objs){
+            result += t.Name + ',';
+        }
+        
+        result = result.substring(0,result.length()-1);
+        
+        System.assertEquals(result, expected);      
     }
 }
